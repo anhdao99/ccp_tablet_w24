@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <a href="#main" class="skip">Skip to Main Content</a>
+        <nav id="navbar">
+            <ul>
+                <li><a class="logo" href = "index.html">E&A</a></li>
+                <li><a class="active" href = "index.html">About</a></li>
+                <li><a href = "pets.html">Pets</a></li>
+                <li><a href = "recipes.html">Recipes</a></li>
+                <li><a href = "travel.html">Travel</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <h1>About Us</h1>
+        <div class="home-grid">
+            <div class="welcome">
+                <h2>Welcome to Everything & Anything</h2>
+                <p>Welcome to Everything & Anything (E&A), your go-to destination for all things pets, recipes, and travel! Explore a world of captivating content where we cater to your love for furry companions, culinary delights, and globetrotting adventures. </p>
+            </div>
+
+            <div class="sneakpeak">
+                <h2>A sneakpeak of our content</h2>
+                    <a href="pets.html#pluto"><img class="home-img" src="images/pluto_cookie.JPG" alt = "White dog looking at cookie"></a>
+                    <a href="recipes.html#brownie"><img class="home-img" src="images/Brownie.jpg" alt="Photo of baked date brownies"></a>
+                    <a href="travel.html#monaco"><img class="home-img" src="images/monaco.jpg" alt="Photo of Monaco during sunset"></a>
+                    <a href="pets.html#fitz"><img class="home-img" src="images/Fitz_sleeping.jpeg" alt="Boston terrier sleeping"></a>
+                    <a href="recipes.html#carbonara"><img class="home-img" src="images/carbonara.jpg" alt="A plate of pasta carbonara"></a>
+                    <a href="travel.html#tokyo"><img class="home-img" src="images/tokyo2.jpg" alt="Bright neon signs in Tokyo at night"></a>
+            </div>
+        </div>
+    </main>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-70px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+    </script>
+    <footer></footer>
+    
+</body>
+</html>
