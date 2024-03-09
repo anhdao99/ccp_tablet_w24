@@ -1,10 +1,4 @@
     .skip{
-        /* position: absolute;
-        left: -10000px;
-        top: auto;
-        width: 1px;
-        height: 1px;
-        overflow: hidden; */
         position: absolute;
         left: -9999px;
         z-index: 999;
@@ -15,12 +9,6 @@
     }
 
     .skip:focus{
-        /* position: static;
-        width: auto;
-        height: auto;
-        color: white;
-        font-weight: bold;
-        border: 3px solid #6feac7; */
         left: 50%;
         font-weight: bold;
         transform: translateX(-50%);
@@ -93,7 +81,7 @@
         font-weight: bold;
         font-family: "Century Gothic", Arial, Helvetica, sans-serif;
         text-align: center;
-        padding: 50px 0px 50px 0px;
+        padding: 100px 0px 50px 0px;
     }
 
     h2{
@@ -199,7 +187,7 @@
         transition: 0.15s;
     }
 
-    @media (min-width:725px){
+    @media (min-width:520px){
         img{
             padding: 5px;
             margin: 20px 0px 20px 0px;
