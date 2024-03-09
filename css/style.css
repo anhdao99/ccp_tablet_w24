@@ -50,16 +50,7 @@
     }
 
     .logo{
-        font-size: 30px;
-        font-weight: bold;
-        font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
-        padding-right: 10px;
-        margin-left: 20px;
-    }
-
-    .logo:hover{
-        color: #6feac7, ;
-        transition: 0.15s;
+        display: none;
     }
 
     body{
@@ -188,6 +179,20 @@
     }
 
     @media (min-width:520px){
+        .logo{
+            display: inline-block;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+            padding-right: 10px;
+            margin-left: 20px;
+        }
+    
+        .logo:hover{
+            color: #6feac7, ;
+            transition: 0.15s;
+        }
+
         img{
             padding: 5px;
             margin: 20px 0px 20px 0px;
@@ -280,6 +285,20 @@
     }
 
 @media (min-width:900px){
+    .logo{
+        display: inline-block;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+        padding-right: 10px;
+        margin-left: 20px;
+    }
+
+    .logo:hover{
+        color: #6feac7, ;
+        transition: 0.15s;
+    }
+
     img{
         padding: 5px;
         margin: 20px 0px 20px 0px;
